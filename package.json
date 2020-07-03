@@ -8,6 +8,10 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "about": "nodemon client/about/server/index.js",
+    "calendar": "nodemon client/calendar/server/index.js",
+    "photos": "nodemon client/photos-carousel/server/app.js",
+    "reviews": "nodemon client/reviews/server/index.js",
     "start": "nodemon server/server.js"
   },
   "dependencies": {
