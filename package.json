@@ -8,11 +8,7 @@
     "node": ">=6.13.0"
   },
   "scripts": {
-    "about": "nodemon client/about/server/index.js",
-    "calendar": "nodemon client/calendar/server/index.js",
-    "photos": "nodemon client/photos-carousel/server/app.js",
-    "reviews": "nodemon client/reviews/server/index.js",
-    "start": "nodemon server/server.js"
+    "start": "node server/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",

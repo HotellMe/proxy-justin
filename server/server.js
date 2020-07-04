@@ -8,10 +8,10 @@ var apiProxy = httpProxy.createProxyServer();
 var cors = require('cors');
 // const proxy = require('http-proxy-middleware');
 
-const calendar = 'http://localhost:3001';
-const photos = 'http://localhost:3002';
-const about = 'http://localhost:3003';
-const reviews = 'http://localhost:3004';
+const calendar = 'http://ec2-3-17-163-130.us-east-2.compute.amazonaws.com/';
+const photos = 'http://ec2-18-217-154-181.us-east-2.compute.amazonaws.com';
+const about = 'http://ec2-54-241-67-8.us-west-1.compute.amazonaws.com/';
+const reviews = 'http://13.57.249.34/';
 
 // test
 // app.get('/,function(req,res) {
@@ -48,4 +48,4 @@ app.all("/reviews/*", function(req, res) {
     apiProxy.web(req, res, {target: reviews, changeOrigin: true});
 });
 
-app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`SERVER ON: listening at port:${port}`))
