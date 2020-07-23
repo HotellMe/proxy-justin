@@ -4,10 +4,10 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/Adrian-n-the-Three-Js/reviews
+  - https://github.com/Adrian-n-the-Three-Js/about
+  - https://github.com/Adrian-n-the-Three-Js/photo-carousel
+  - https://github.com/Adrian-n-the-Three-Js/calendar
 
 ## Table of Contents
 
