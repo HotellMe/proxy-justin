@@ -1,0 +1,93 @@
+html {
+  background-color:#f2f2f2;
+  min-width: 900px;
+}
+#top {
+  display: flex;
+  flex-direction: row;
+  max-height: 520px;
+  min-height: 500px;
+  max-width: 1400px;
+  padding-left: 15px;
+  padding-bottom:0px;
+}
+#app {
+  display: inline-block;
+  position: relative;
+}
+#photos-home {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+#about {
+  margin-top: 0px;
+  max-width: 1220px;
+}
+div.App__Background-sc-1yy6cbu-0.eHJVFS {
+  height: 0px;
+}
+div.Albums__Container-f4lswq-0.kpLbJK {
+  width: 230px;
+}
+div.App__Outer-sc-1yy6cbu-1.ZoPAK {
+  margin: 0px;
+}
+div.App__Container-sc-1yy6cbu-2.egYcud {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+/* Photos pictures on right - styled components class changes */
+.sc-AxjAm.viAxi,
+.sc-AxjAm.bLifsr,
+.sc-AxjAm.cutPKF {
+  height: 157.5px;
+}
+div.App__Container-sc-1yy6cbu-2.egYcud {
+  padding-top: 1px;
+}
+div.sc-fznNvL.jRyzVK {
+  height: 492px;
+}
+#modal .box-dialog {
+  position: fixed;
+  top: 30%;
+  left: 78px;
+  width: 700px;
+}
+/* About wrapper - styled components class changes */
+div.App__AppWrapper-sc-17y3snd-1.jPcUFR {
+  padding: 38px;
+  margin-left: 0px;
+  height: 800px;
+  border: 1px solid #E0E0E0;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 57px;
+  width: 715px;
+}
+.App__AppWrapper-sc-17y3snd-1.jPcUFR h2 {
+  font-size: 40px;
+  border-bottom: 2px solid #E0E0E0;
+}
+div.app {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+#about {
+  padding: 28px;
+  padding-right: 12px;
+  background-color: #F2F2F2;
+  border: 1px solid #E0E0E0;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  width: 800px;
+}
+.page-title {
+  font-family: “Trips Sans”, Arial, sans-serif;
+}
+.page-title {
+  color: #00AA6C;
+  background-color: #001F3F;
+  padding-left: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  max-width: 1200px;
+}

@@ -8,17 +8,17 @@ var apiProxy = httpProxy.createProxyServer();
 var cors = require('cors');
 // const proxy = require('http-proxy-middleware');
 
-const calendar = 'http://ec2-3-17-163-130.us-east-2.compute.amazonaws.com/';
-const photos = 'http://ec2-18-217-154-181.us-east-2.compute.amazonaws.com';
-const about = 'http://ec2-54-241-67-8.us-west-1.compute.amazonaws.com/';
-const reviews = 'http://13.57.249.34/';
+const calendar = 'http://3.134.88.190/';
+const photos = 'http://54.219.179.19/';
+const about = 'http://54.215.236.205/';
+const reviews = 'http://54.193.182.157/';
 
 // test
 // app.get('/,function(req,res) {
 //     res.send("Hello world From Server 1");
 // });
-
-app.use('/', express.static(path.join(__dirname, '../public')));
+app.use('/loaderio-847f02e4edd3d08f1f5e722f0f122787.txt', express.static(path.join(__dirname, '../loaderio-847f02e4edd3d08f1f5e722f0f122787.txt')))
+app.use('/:id', express.static(path.join(__dirname, '../public')));
 app.use(cors());
 
 app.use(express.json()); // for parsing application/json
@@ -31,7 +31,7 @@ app.all("/api/calendar/db/*", function(req, res) {
 });
 
 // PHOTOS
-app.all("/api/:hotelId/photos", function(req, res) {
+app.all("/api/*/photos", function(req, res) {
     console.log('redirecting to photos');
     apiProxy.web(req, res, {target: photos, changeOrigin: true});
 });
@@ -43,7 +43,7 @@ app.all("/api/photos/*", function(req, res) {
 });
 
 // REVIEWS
-app.all("/reviews/*", function(req, res) {
+app.all("*/reviews", function(req, res) {
     console.log('redirecting to reviews');
     apiProxy.web(req, res, {target: reviews, changeOrigin: true});
 });
